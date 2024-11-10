@@ -1,0 +1,25 @@
+﻿@model CP3.MVC.Application.Dtos.BarcoDto
+
+<h1>Detalhes do Barco</h1>
+
+<div>
+    <h4>Informações</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Nome</dt>
+        <dd class="col-sm-10">@Model.Nome</dd>
+
+        <dt class="col-sm-2">Modelo</dt>
+        <dd class="col-sm-10">@Model.Modelo</dd>
+
+        <dt class="col-sm-2">Ano</dt>
+        <dd class="col-sm-10">@Model.Ano</dd>
+
+        <dt class="col-sm-2">Tamanho</dt>
+        <dd class="col-sm-10">@Model.Tamanho</dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</div>
